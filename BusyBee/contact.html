@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusyBee</title>
+  
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+  
+    <!-- Google Fonts (if you're using Nunito or similar) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  
+    <!-- Lottie Player for animated bee -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  
+<body>
+  <header>
+    <div class="logo">
+      <lottie-player src="assets/bee.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+      <h1>BusyBee</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="find.html">Find Spot</a>
+      <a href="meter.html">BusyMeter</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear your feedback or answer any questions!</p>
+    <p>Email: hello@busybeeapp.com</p>
+    <form>
+      <label for="message">Leave a message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="We’d love your thoughts!"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 BusyBee Team 🐝</p>
+  </footer>
+</body>
+</html>
