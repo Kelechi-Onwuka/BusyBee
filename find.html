@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusyBee</title>
+  
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+  
+    <!-- Google Fonts (if you're using Nunito or similar) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  
+    <!-- Lottie Player for animated bee -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  
+<body>
+  <header>
+    <div class="logo">
+      <lottie-player 
+        src="assets/bee.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 50px; height: 50px;" 
+        loop 
+        autoplay>
+      </lottie-player>
+      <h1>BusyBee</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="find.html" class="active">Find Spot</a>
+      <a href="meter.html">BusyMeter</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="find-container">
+    <h2>Find a Study Spot Near You</h2>
+
+    <div class="filters">
+      <h3>Filter by:</h3>
+      <label><input type="checkbox" checked> Quiet Zones</label>
+      <label><input type="checkbox"> Wi-Fi Available</label>
+      <label><input type="checkbox"> Power Outlets</label>
+      <label><input type="checkbox"> Cafe Nearby</label>
+    </div>
+
+    <div class="map-area">
+      <img src="assets/map-placeholder.png" alt="Map mockup" />
+      <div class="busy-meter">
+        <p>BusyBee Meter: <strong style="color: green;">Low</strong></p>
+      </div>
+      <button class="cta-button">Find Study Spots</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 BusyBee Team 🐝</p>
+  </footer>
+</body>
+</html>
